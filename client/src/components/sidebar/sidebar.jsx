@@ -10,6 +10,7 @@ import {
   WorkOutline,
   Event,
   School,
+  Book,
 } from "@material-ui/icons";
 
 export default function Sidebar() {
@@ -48,6 +49,46 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <Event className="sidebarIcon" />
             <span className="sidebarListItemText">Events</span>
+          </li>
+          <li className="sidebarListItem">
+            <School className="sidebarIcon" />
+            <span className="sidebarListItemText">Cources</span>
+          </li>
+        </ul>
+        <button className="sidebarButton">Show More</button>
+        <hr className="sidebarHr" />
+        <ul className="sidebarFriendList">
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/1.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">Jane Done</span>
+          </li>
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/2.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">Jane Done</span>
+          </li>
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/4.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">Jane Done</span>
+          </li>
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/5.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">Jane Done</span>
           </li>
         </ul>
       </div>
