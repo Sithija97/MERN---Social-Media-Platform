@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./index.html", , "./src/**/*.{html,js,jsx}"],
+  // eslint-disable-next-line no-sparse-arrays
+  content: ["./index.html", , "./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     colors: {
       bgColor: "rgb(var(--color-bg) / <alpha-value>)",

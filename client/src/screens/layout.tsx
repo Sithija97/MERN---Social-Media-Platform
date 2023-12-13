@@ -6,7 +6,7 @@ type IProps = {
 
 export const PrivateRoute = ({ children }: IProps) => {
   //   const { user } = useAppSelector((state: RootState) => state.auth);
-  const user = null;
+  const user = true;
 
   if (!user) {
     return <Navigate to="/login" />;

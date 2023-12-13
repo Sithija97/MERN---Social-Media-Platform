@@ -27,11 +27,11 @@ const themePersistConfig = {
 };
 
 const persistedAuthReducer = persistReducer(authPersistConfig, authReducer);
-const persistedOtherReducer = persistReducer(themePersistConfig, themeReducer);
+const persistedThemeReducer = persistReducer(themePersistConfig, themeReducer);
 
 const rootReducer = combineReducers({
   auth: persistedAuthReducer,
-  other: persistedOtherReducer,
+  theme: persistedThemeReducer,
   posts: postsReducer,
 });
 
