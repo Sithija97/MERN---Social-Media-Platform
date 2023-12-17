@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { TbSocial } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { FORGOTPASSWORD } from "../routes/router";
-import TextInput from "../components/textInput";
+import { TextInput, Button } from "../components";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
@@ -57,6 +57,7 @@ export const Login = () => {
               name="email"
               type="email"
               placeholder="Email"
+              styles="w-full rounded-md"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
@@ -73,6 +74,7 @@ export const Login = () => {
               name="password"
               type="password"
               placeholder="Password"
+              styles="w-full rounded-md"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.password}
@@ -89,12 +91,11 @@ export const Login = () => {
             >
               Forgot Password ?
             </Link>
-            <button
+            <Button
+              title="Sign in"
               type="submit"
-              className="inline-flex justify-center rounded-md bg-[#BEADFA] px-8 py-3 text-sm font-medium text-black outline-none"
-            >
-              Submit
-            </button>
+              styles="inline-flex justify-center rounded-md bg-[#BEADFA] px-8 py-3 text-sm font-medium text-black outline-none"
+            />
           </form>
           <p className="text-ascent-2 text-sm text-center">
             Don't have an account?

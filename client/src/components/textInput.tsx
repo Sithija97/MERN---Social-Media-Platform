@@ -2,11 +2,13 @@ import React, { InputHTMLAttributes } from "react";
 
 interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
+  styles?: string;
   error?: string | undefined;
 }
 
-const TextInput: React.FC<TextInputProps> = ({
+export const TextInput: React.FC<TextInputProps> = ({
   label,
+  styles,
   error,
   ...inputProps
 }) => {
@@ -17,11 +19,9 @@ const TextInput: React.FC<TextInputProps> = ({
       </label>
       <input
         {...inputProps}
-        className="w-full rounded-md bg-secondary border-none outline-none text-sm text-ascent-1 px-4 py-3 placeholder:text-[#666]"
+        className={`${styles} bg-secondary border-none outline-none text-sm text-ascent-1 px-4 py-3 placeholder:text-[#666]`}
       />
       {error && <div className="text-lightRed text-sm mt-1">{error}</div>}
     </div>
   );
 };
-
-export default TextInput;

@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Layout, Login, Register } from "../screens";
+import { ForgotPassword, Home, Layout, Login, Register } from "../screens";
 
 export const ROOT = "/";
 export const LOGIN = "/login";
@@ -14,6 +14,7 @@ export const router = createBrowserRouter([
   { path: ROOT, element: <Login /> },
   { path: LOGIN, element: <Login /> },
   { path: REGISTER, element: <Register /> },
+  { path: FORGOTPASSWORD, element: <ForgotPassword /> },
   {
     path: PROTECTED,
     element: <Layout />,
