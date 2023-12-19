@@ -43,12 +43,10 @@ export const Register = () => {
         {/* left */}
         <div className="w-full lg:w-1/2 h-full p-10 2xl:px-20 flex flex-col justify-center">
           <div className="w-full flex gap-2 items-center mb-6">
-            <div className="p-2 bg-[#BEADFA] rounded text-black">
+            <div className="p-2 bg-blue rounded text-black">
               <TbSocial />
             </div>
-            <span className="text-2xl text-[#BEADFA] font-semibold">
-              ShareFun
-            </span>
+            <span className="text-2xl text-blue font-semibold">ShareFun</span>
           </div>
           <p className="text-ascent-1 text-base font-semibold">
             Sign up to your account
@@ -147,42 +145,34 @@ export const Register = () => {
 
             {/* <Link
               to={FORGOTPASSWORD}
-              className="'text-sm text-right text-[#BEADFA] font-semibold mb-2"
+              className="'text-sm text-right text-blue font-semibold mb-2"
             >
               Forgot Password ?
             </Link> */}
             <Button
               title="Sign up"
               type="submit"
-              styles="inline-flex justify-center rounded-md bg-[#BEADFA] px-8 py-3 text-sm font-medium text-black outline-none"
+              styles="inline-flex justify-center rounded-md bg-blue px-8 py-3 text-sm font-medium text-black outline-none"
             />
           </form>
           <p className="text-ascent-2 text-sm text-center">
             Already have an account?
             <Link
               to="/login"
-              className="text-[#BEADFA] font-semibold ml-2 cursor-pointer"
+              className="text-blue font-semibold ml-2 cursor-pointer"
             >
               Sign in
             </Link>
           </p>
         </div>
         {/* right */}
-        <div className="hidden w-1/2 h-full lg:flex flex-col items-center justify-center bg-[#BEADFA]">
+        <div className="hidden w-1/2 h-full lg:flex flex-col items-center justify-center bg-white">
           <div className="relative w-full flex items-center justify-center">
             <img
-              src=" https://as2.ftcdn.net/v2/jpg/05/61/63/47/1000_F_561634789_johaTtfGZtpTsKFzFfVn6OZRQAm7YibW.jpg"
+              src="https://img.freepik.com/free-vector/digital-lifestyle-concept-illustration_114360-7327.jpg?w=740&t=st=1702968531~exp=1702969131~hmac=7d58f017f2f341629f67f885e63c5934e456edf32399f3067dd54e414dd49373"
               alt="Bg Image"
-              className="w-48 2xl:w-64 h-48 2xl:h-64 rounded-full object-cover"
+              className="max-w-md h-fit object-cover"
             />
-          </div>
-          <div className="mt-16 text-center">
-            <p className="text-back text-base">
-              Connect with friedns & have share for fun
-            </p>
-            <span className="text-sm text-black/80">
-              Share memories with friends and the world.
-            </span>
           </div>
         </div>
       </div>

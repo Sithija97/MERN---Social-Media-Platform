@@ -53,7 +53,7 @@ export const ForgotPassword = () => {
           <Button
             title="Sign in"
             type="submit"
-            styles="inline-flex justify-center rounded-md bg-[#BEADFA] px-8 py-3 text-sm font-medium text-black outline-none"
+            styles="inline-flex justify-center rounded-md bg-blue px-8 py-3 text-sm font-medium text-black outline-none"
           />
         </form>
       </div>
