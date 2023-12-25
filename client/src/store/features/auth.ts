@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { InitialState } from "../../models";
+import { user } from "../../data";
 
-const initialState = {
-  user: {} || null,
+const initialState: InitialState = {
+  user: user,
   edit: false,
 };
 

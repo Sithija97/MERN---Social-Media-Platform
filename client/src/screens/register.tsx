@@ -127,8 +127,8 @@ export const Register = () => {
               <TextInput
                 label="Confirm Password"
                 id=" confirmpassword"
-                name=" confirmpassword"
-                type=" confirmpassword"
+                name="confirmpassword"
+                type="password"
                 placeholder="Confirm Password"
                 styles="w-full rounded-md"
                 onChange={formik.handleChange}
