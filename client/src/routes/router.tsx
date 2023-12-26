@@ -1,5 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import { ForgotPassword, Home, Layout, Login, Register } from "../screens";
+import {
+  ForgotPassword,
+  Home,
+  Layout,
+  Login,
+  Profile,
+  Register,
+} from "../screens";
 
 export const ROOT = "/";
 export const LOGIN = "/login";
@@ -22,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: HOME,
         element: <Home />,
+      },
+      {
+        path: PROFILE,
+        element: <Profile />,
       },
     ],
   },

@@ -21,6 +21,6 @@ const authSlice = createSlice({
   //   extraReducers: (builder) => {},
 });
 
-// export const { logout } = authSlice.actions;
+export const { updateProfile } = authSlice.actions;
 
 export default authSlice.reducer;

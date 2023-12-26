@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { RootState, useAppSelector } from "../store/store";
+import { RootState, useAppDispatch, useAppSelector } from "../store/store";
 import NoProfile from "../assets/userprofile.png";
 import { user as data } from "../data";
 import { LiaEditSolid } from "react-icons/lia";
@@ -12,13 +12,17 @@ import {
 import { FaTwitterSquare } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import moment from "moment";
+import { updateProfile } from "../store/features/auth";
 
 export const Profile = () => {
+  const dispatch = useAppDispatch();
   const { user } = useAppSelector((state: RootState) => state.auth);
+
+  const handleEditProfile = () => dispatch(updateProfile(true));
   return (
     <div className="w-full bg-primary flex flex-col items-center shadow-sm rounded-lg px-6 py-4">
       <div className="w-full flex items-center justify-between border-b border-[#66666645] pb-5">
-        <Link to={`/profile/${user?._id}`} className="flex gap-2">
+        <Link to={`/protected/profile/${user?._id}`} className="flex gap-2">
           <img
             src={user?.profileUrl ?? NoProfile}
             alt="profileImg"
@@ -33,12 +37,12 @@ export const Profile = () => {
           </div>
         </Link>
 
-        <div>
+        <div className="mb-6">
           {user?._id === data?._id ? (
             <LiaEditSolid
               size={22}
               className="text-blue cursor-pointer"
-              onClick={() => {}}
+              onClick={handleEditProfile}
             />
           ) : (
             <button

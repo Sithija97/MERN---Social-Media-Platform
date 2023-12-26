@@ -6,6 +6,7 @@ import { Button, TextInput } from ".";
 import { setTheme } from "../store/features/theme";
 import { BsMoon, BsSunFill } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { HOME } from "../routes/router";
 
 export const Header = () => {
   const dispatch = useDispatch();
@@ -18,7 +19,7 @@ export const Header = () => {
 
   return (
     <div className="topbar w-full flex flex-row items-center justify-between py-3 md:py-6 px-4 bg-primary">
-      <Link to="/" className="flex gap-2 items-center">
+      <Link to={HOME} className="flex gap-2 items-center">
         <div className="p-1 md:p-2 bg-blue rounded text-white">
           <TbSocial />
         </div>
