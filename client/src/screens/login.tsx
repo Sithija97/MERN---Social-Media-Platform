@@ -1,4 +1,3 @@
-"react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { TbSocial } from "react-icons/tb";
@@ -36,7 +35,7 @@ export const Login = () => {
         {/* left */}
         <div className="w-full lg:w-1/2 h-full p-10 2xl:px-20 flex flex-col justify-center">
           <div className="w-full flex gap-2 items-center mb-6">
-            <div className="p-2 bg-blue rounded text-black">
+            <div className="p-2 bg-blue rounded text-white">
               <TbSocial />
             </div>
             <span className="text-2xl text-blue font-semibold">ShareFun</span>
@@ -92,7 +91,7 @@ export const Login = () => {
             <Button
               title="Sign in"
               type="submit"
-              styles="inline-flex justify-center rounded-md bg-blue px-8 py-3 text-sm font-medium text-black outline-none"
+              styles="inline-flex justify-center rounded-md bg-blue px-8 py-3 text-sm font-medium text-white outline-none"
             />
           </form>
           <p className="text-ascent-2 text-sm text-center">

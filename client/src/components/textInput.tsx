@@ -19,7 +19,7 @@ export const TextInput: React.FC<TextInputProps> = ({
       </label>
       <input
         {...inputProps}
-        className={`${styles} bg-secondary rounded border border-[#66666690] outline-none text-sm text-ascent-1 px-4 py-3 placeholder:text-[#666]`}
+        className={`${styles} bg-secondary rounded-md border border-[#66666690] outline-none text-sm text-ascent-1 px-4 py-3 placeholder:text-[#666]`}
       />
       {error && <div className="text-lightRed text-sm mt-1">{error}</div>}
     </div>
