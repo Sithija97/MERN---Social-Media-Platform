@@ -33,7 +33,8 @@ export const Profile = () => {
             <p className="text-lg font-medium text-ascent-1">
               {`${user?.firstName} ${user?.lastName}`}
             </p>
-            <span className="text-ascent-2">{user?.email}</span>
+            {/* <span className="text-ascent-2">{user?.email}</span> */}
+            <span className="text-ascent-2">code@gmail.com</span>
           </div>
         </Link>
 
