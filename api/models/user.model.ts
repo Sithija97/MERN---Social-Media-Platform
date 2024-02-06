@@ -1,7 +1,8 @@
 import mongoose, { Schema } from "mongoose";
 import bcrypt from "bcryptjs";
+import { User } from "../interfaces/user.interface.js";
 
-const userSchema = new Schema(
+const userSchema = new Schema<User>(
   {
     firstname: {
       type: String,

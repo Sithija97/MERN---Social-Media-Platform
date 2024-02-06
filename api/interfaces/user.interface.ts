@@ -1,7 +1,5 @@
-import { Document } from "mongoose";
-import { Types } from "mongoose";
-
-interface User extends Document {
+import { Document, Types } from "mongoose";
+export interface User extends Document {
   firstname: string;
   lastname: string;
   email: string;
@@ -15,5 +13,3 @@ interface User extends Document {
   createdAt: Date;
   updatedAt: Date;
 }
-
-export { User };

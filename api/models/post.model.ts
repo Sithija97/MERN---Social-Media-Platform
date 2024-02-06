@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import { Post } from "../interfaces/post.interface.js";
 
-const postSchema = new Schema(
+const postSchema = new Schema<Post>(
   {
     userId: { type: Schema.Types.ObjectId, ref: "User" },
     description: { type: String, required: true },

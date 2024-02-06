@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import { FriendRequest } from "../interfaces/friendRequest.interface.js";
 
-const friendRequestSchema = new Schema(
+const friendRequestSchema = new Schema<FriendRequest>(
   {
     requestTo: { type: Schema.Types.ObjectId, ref: "User" },
     requestFrom: { type: Schema.Types.ObjectId, ref: "User" },

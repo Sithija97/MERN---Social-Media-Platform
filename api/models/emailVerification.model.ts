@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import { EmailVerfication } from "../interfaces/emailVerfification.interface.js";
 
-const emailVerificationSchema = new Schema({
+const emailVerificationSchema = new Schema<EmailVerfication>({
   userId: String,
   token: String,
   createdAt: Date,

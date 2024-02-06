@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import { Comment } from "../interfaces/comment.interface.js";
 
-const commentSchema = new Schema(
+const commentSchema = new Schema<Comment>(
   {
     userId: { type: Schema.Types.ObjectId, ref: "User" },
     postId: { type: Schema.Types.ObjectId, ref: "Post" },
