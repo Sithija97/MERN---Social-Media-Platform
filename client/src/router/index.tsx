@@ -1,13 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import {
-  ForgotPassword,
-  Home,
-  Layout,
-  Login,
-  Profile,
-  Register,
-} from "../screens";
-
+import { SignIn, SignUp, Root, Home, ForgotPassword } from "../pages";
 export const ROOT = "/";
 export const LOGIN = "/login";
 export const REGISTER = "/register";
@@ -18,22 +10,13 @@ export const HOME = "/protected/home";
 export const PROFILE = "/protected/profile/:id?";
 
 export const router = createBrowserRouter([
-  { path: ROOT, element: <Login /> },
-  { path: LOGIN, element: <Login /> },
-  { path: REGISTER, element: <Register /> },
+  { path: ROOT, element: <SignIn /> },
+  { path: LOGIN, element: <SignIn /> },
+  { path: REGISTER, element: <SignUp /> },
   { path: FORGOTPASSWORD, element: <ForgotPassword /> },
   {
-    path: PROTECTED,
-    element: <Layout />,
-    children: [
-      {
-        path: HOME,
-        element: <Home />,
-      },
-      {
-        path: PROFILE,
-        element: <Profile />,
-      },
-    ],
+    path: "/",
+    element: <Root />,
+    children: [{ path: "/", element: <Home /> }],
   },
 ]);

@@ -1,12 +1,11 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { RootState, useAppSelector } from "../store/store";
 
 type IProps = {
   children: React.ReactNode;
 };
 
 export const PrivateRoute = ({ children }: IProps) => {
-  const { user } = useAppSelector((state: RootState) => state.auth);
+  const user = true;
 
   if (!user) {
     return <Navigate to="/login" />;
