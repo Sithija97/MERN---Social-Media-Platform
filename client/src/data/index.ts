@@ -16,7 +16,7 @@ export const user = {
       updatedAt: "2023-08-18T09:49:19.475Z",
       __v: 2,
       profileUrl:
-        "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874470/cld-sample.jpg",
+        "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector.png",
     },
     {
       _id: "64df39704180b81adfe41d0b",
@@ -86,7 +86,7 @@ export const user = {
   createdAt: "2023-08-18T09:38:14.179Z",
   updatedAt: "2023-08-21T06:46:18.258Z",
   profileUrl:
-    "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874454/samples/people/boy-snow-hoodie.jpg",
+    "https://img.freepik.com/premium-vector/avatar-profile-vector-illustrations-website-social-networks-user-profile-icon_495897-223.jpg?w=740",
   token: "hZWFmZmU3NmMiLCJpYXQiOjE2OTIwMzY5",
 };
 

@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { SignIn, SignUp, Root, Home, ForgotPassword } from "../pages";
+import { SignIn, SignUp, Home, ForgotPassword, Layout } from "../pages";
 export const ROOT = "/";
 export const LOGIN = "/login";
 export const REGISTER = "/register";
@@ -15,8 +15,13 @@ export const router = createBrowserRouter([
   { path: REGISTER, element: <SignUp /> },
   { path: FORGOTPASSWORD, element: <ForgotPassword /> },
   {
-    path: "/",
-    element: <Root />,
-    children: [{ path: "/", element: <Home /> }],
+    path: PROTECTED,
+    element: <Layout />,
+    children: [
+      {
+        path: HOME,
+        element: <Home />,
+      },
+    ],
   },
 ]);
