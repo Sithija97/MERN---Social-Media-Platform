@@ -15,8 +15,7 @@ export const user = {
       createdAt: "2023-08-18T09:33:32.519Z",
       updatedAt: "2023-08-18T09:49:19.475Z",
       __v: 2,
-      profileUrl:
-        "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector.png",
+      profileUrl: "https://social.webestica.com/assets/images/avatar/07.jpg",
     },
     {
       _id: "64df39704180b81adfe41d0b",
@@ -85,8 +84,7 @@ export const user = {
   verified: true,
   createdAt: "2023-08-18T09:38:14.179Z",
   updatedAt: "2023-08-21T06:46:18.258Z",
-  profileUrl:
-    "https://img.freepik.com/premium-vector/avatar-profile-vector-illustrations-website-social-networks-user-profile-icon_495897-223.jpg?w=740",
+  profileUrl: "https://social.webestica.com/assets/images/avatar/07.jpg",
   token: "hZWFmZmU3NmMiLCJpYXQiOjE2OTIwMzY5",
 };
 

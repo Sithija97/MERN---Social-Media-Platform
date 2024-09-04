@@ -4,10 +4,9 @@ import { Profile } from "../organisms";
 export const Home = () => {
   return (
     <>
-      <div className="home w-full px-o lg:px-0 pb-20 2xl:px-40 bg-slate-50 h-screen overflow-hidden ">
-        <Header />
-
-        <div className="w-full flex gap-2 lg:gap-4 md:pl-4 pt-5 pb-10 h-full">
+      <Header />
+      <div className="home w-full px-20 bg-slate-200 h-screen overflow-hidden ">
+        <div className="w-full flex gap-2 lg:gap-4  pt-5 pb-10 h-full">
           {/* left */}
           <div className="hidden w-1/3 lg:w-1/4 md:flex flex-col gap-6 overflow-y-auto">
             <Profile />
